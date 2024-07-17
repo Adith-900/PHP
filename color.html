@@ -1,19 +1,20 @@
 <html>
 <head>
-<title>color</title>
+<title>Color</title>
 </head>
-<body bgcolor="9b9cb8" align="center">
-<h1>Change backgroung color</h1>
-<button onclick="change()" >click here</button>
+<body bgcolor="764303" align="center">
+<h1>Change Background Color</h1>
+<button onclick="change()">Click Here</button>
 <script>
-function change()
-{
-var color=["blue","red","orange","yellow","green","violet"];
-var i=Math.floor(Math.random()*10);
-document.bgColor=color[i];
+function change() {
+    // Generate random RGB values
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    
+    // Set the background color using the generated RGB values
+    document.body.style.backgroundColor = "rgb(" + r + ", " + g + ", " + b + ")";
 }
-
 </script>
 </body>
 </html>
-
