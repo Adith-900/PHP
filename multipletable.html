@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>multiplication table</title>
+</head>
+<body bgcolor="9b9cb8">
+<form>
+<h1>Multiplication table</h1>
+Enter the number:<input type="number" id="num"><br>
+Enter the range: <input type="number" id="range"><br>
+<button onclick="multi()">Generate table</button>
+</form>
+<script>
+function multi()
+{
+var num=document.getElementById("num").value;
+var range=document.getElementById("range").value;
+
+for(i=1;i<=range;i++)
+{
+var result=i*num;
+document.write(i+"*"+num+"="+result+"<br>");
+}
+}
+</script>
+</body>
+</html>
