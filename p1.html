@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <script>
+        function check(string) {
+            var len = string.length;
+            
+            if (string == "") {
+                return "Enter a string";
+            }
+            
+            for (var i = 0; i < len / 2; i++) {
+                if (string[i] !== string[len - 1 - i]) {
+                    return "It is not a palindrome";
+                }
+            }
+            
+            return "It is a palindrome";
+        }
+        
+        const string1 = prompt("Enter a String: ");
+        const value = check(string1);
+        alert(value);
+    </script>
+</body>
+</html>
