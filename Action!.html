@@ -1,0 +1,21 @@
+<html>
+    <body>
+	    <h2>Javascript Alert</h2>
+		    <button onclick="fun()">Try it</button>
+			<p id="conf"></p>
+		    <script>
+			    function fun()
+				    { 
+					    var result;
+						var r = confirm("Select an Action!");
+						    if(r==true)
+							    { result="You have selected OK!" ; }
+							else
+                				{ result="You have selected Cancelled!" ; }
+						document.getElementById("conf").innerHTML = result;
+					}
+			</script>
+		
+	</body>
+
+</html>
